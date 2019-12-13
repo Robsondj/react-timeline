@@ -37,7 +37,7 @@ export default class Header extends Component {
             <ul className="header-nav">
               <li className="header-nav-item">
               <span>{this.state.msg}</span>
-                <a href="#">
+                <a href="!#">
                   ♡
                   {/*                 ♥ */}
                   {/* Quem deu like nas minhas fotos */}

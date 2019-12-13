@@ -16,7 +16,7 @@ class FotoAtualizacoes extends Component {
 	render(){
         return (
             <section className="fotoAtualizacoes">
-              <a onClick={this.like.bind(this)} className={this.props.foto.likeada ? 'fotoAtualizacoes-like-ativo' : 'fotoAtualizacoes-like'}>Likar</a>
+              <a onClick={this.like.bind(this)} className={this.props.foto.likeada ? 'fotoAtualizacoes-like-ativo' : 'fotoAtualizacoes-like'} href={'!#'}>Likar</a>
               <form className="fotoAtualizacoes-form" onSubmit={this.comenta.bind(this)}>
                 <input type="text" placeholder="Adicione um comentário..." className="fotoAtualizacoes-form-campo" ref={input => this.comentario = input}/>
                 <input type="submit" value="Comentar!" className="fotoAtualizacoes-form-submit"/>
@@ -43,7 +43,7 @@ class FotoInfo extends Component {
               </div>
 
               <p className="foto-info-legenda">
-                <a className="foto-info-autor">autor </a>
+                <a className="foto-info-autor" href="!#">autor </a>
                 {this.props.foto.comentario}
               </p>
 
