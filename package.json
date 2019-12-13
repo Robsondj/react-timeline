@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "immutable": "^3.8.1",
     "pubsub-js": "^1.5.4",
     "react": "^16.10.1",
     "react-addons-css-transition-group": "^15.6.2",
