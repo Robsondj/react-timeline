@@ -70,6 +70,10 @@ export default class TimelineApi {
 
 					dispatch(listagem(fotos));
 					return fotos;
+				})
+				.catch(erro => {
+					console.log(erro);
+					dispatch(notifica('Usuario não encontrado'));
 				});
     	}
     }
